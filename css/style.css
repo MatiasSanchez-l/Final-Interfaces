@@ -1,0 +1,9 @@
+#language-img
+{
+  transform: rotate(90deg);
+}
+
+button
+{
+  cursor: pointer;
+}
