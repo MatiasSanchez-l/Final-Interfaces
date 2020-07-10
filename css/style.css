@@ -3,7 +3,23 @@
   transform: rotate(90deg);
 }
 
-button
+button, .pointer
 {
   cursor: pointer;
+}
+
+#mySidebar
+{
+  display: none;
+  width:200px;
+  right:0;
+}
+#headerMobile
+{
+  margin-bottom: 64px;
+}
+
+#idioma-nav
+{
+  color:#2E4A62;
 }

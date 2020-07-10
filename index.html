@@ -5,6 +5,7 @@
     <title>Lang</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -12,26 +13,44 @@
   <body>
     <header class="w3-container">
       <!-- NAVIGATION -->
-      <section class="w3-padding-large w3-row w3-border-bottom">
+      <section class="w3-padding-large w3-row w3-border-bottom w3-hide-small w3-hide-medium">
         <div class="w3-twothird">
-          <div class="w3-half w3-hide-small w3-hide-medium">
-            <img href="#" src="img/LogoBlack.png" alt="logo header" width="12%">
+          <div class="w3-half">
+            <img class="pointer" href="#" src="img/LogoBlack.png" alt="logo header" width="12%">
           </div>
-          <div class="w3-hide-large w3-center">
+          <!--<div class="w3-hide-large w3-center">
             <img class="w3-center" href="#" src="img/LogoBlack.png" alt="logo header" width="16%">
-          </div>
-           <div class="w3-bar w3-half w3-mobile" >
-             <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-indigo" >Idiomas</a>
+          </div>-->
+           <div class="w3-bar w3-half w3-mobile w3-hide-small w3-hide-medium">
+             <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-indigo" id="idioma-nav">Idiomas</a>
              <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-indigo" >Cursos</a>
              <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-indigo" >Niveles</a>
              <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-indigo" >Descubre</a>
            </div>
          </div>
-         <div class="w3-bar  w3-third">
-           <a href="#" class="w3-bar-item w3-button w3-right w3-hover-indigo w3-black"><i class="fa fa-search"></i></a>
+         <div class="w3-bar w3-third w3-hide-small w3-hide-medium">
+           <a href="#" class="w3-bar-item w3-button w3-right w3-hover-indigo w3-2018-sailor-blue"><i class="fa fa-search"></i></a>
            <input type="text" class="w3-bar-item w3-input w3-right w3-small" placeholder="Buscar..">
           <a href="#" class="w3-bar-item w3-button w3-mobile w3-right w3-hover-indigo">Registrarse</a>
          </div>
+      </section>
+
+      <section class=" w3-hide-large" id="headerMobile">
+        <div class=" w3-display-topleft w3-padding">
+          <img class="pointer" href="#" src="img/LogoBlackMobile.png" alt="logo header" width="70%">
+        </div>
+        <div class=" w3-display-topright">
+          <div class="button-mobile w3-padding">
+              <button class="w3-button w3-xlarge w3-right w3-hover-indigo w3-hide-large " onclick="w3_open()">&#9776;</button>
+          </div>
+          <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="width:200px;" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-hide-large w3-dark-gray" onclick="w3_close()">Cerrar &times;</button>
+            <a href="#" class="w3-bar-item w3-button w3-2018-sailor-blue w3-hover-indigo">Idiomas</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-indigo">Cursos</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-indigo">Niveles</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-indigo">Descubre</a>
+          </div>
+        </div>
       </section>
     </header>
     <main class="w3-container">
@@ -46,19 +65,19 @@
           <img class = "w3-hover-opacity" src="img/estados-unidos.svg" id="language-img" alt="Ingles" style="width:100%">
           <h3>INGLÉS</h3>
           <p>30,4M de estudiantes</p>
-          <button class="w3-button w3-black w3-round-xxlarge w3-hover-indigo">Comprar</button>
+          <button class="w3-button w3-2018-sailor-blue w3-round-xxlarge w3-hover-indigo">Comprar</button>
         </div>
         <div class="w3-third w3-margin-bottom" style="cursor:pointer">
           <img class = "w3-hover-opacity" src="img/china.svg" id="language-img" alt="Chino" style="width:100%">
           <h3>CHINO</h3>
           <p>12,3M de estudiantes</p>
-          <button class="w3-button w3-black w3-round-xxlarge w3-hover-indigo">Comprar</button>
+          <button class="w3-button w3-2018-sailor-blue w3-round-xxlarge w3-hover-indigo">Comprar</button>
         </div>
         <div class="w3-third" style="cursor:pointer">
           <img class = "w3-hover-opacity" src="img/francia.svg" id="language-img" alt="Frances" style="width:100%">
           <h3>FRANCÉS</h3>
           <p>4,28M de estudiantes</p>
-          <button class="w3-button w3-black w3-round-xxlarge w3-hover-indigo">Comprar</button>
+          <button class="w3-button w3-2018-sailor-blue w3-round-xxlarge w3-hover-indigo">Comprar</button>
         </div>
       </div>
 
@@ -68,26 +87,26 @@
           <img class = "w3-hover-opacity" src="img/italia.svg" id="language-img" alt="Italiano" style="width:100%">
           <h3>ITALIANO</h3>
           <p>2.98M de estudiantes</p>
-          <button class="w3-button w3-black w3-round-xxlarge w3-hover-indigo">Comprar</button>
+          <button class="w3-button w3-2018-sailor-blue w3-round-xxlarge w3-hover-indigo">Comprar</button>
         </div>
         <div class="w3-third w3-margin-bottom" style="cursor:pointer">
           <img class = "w3-hover-opacity" src="img/brasil.svg" id="language-img" alt="Portugues" style="width:100%">
           <h3>PORTUGUÉS</h3>
           <p>2,36M de estudiantes</p>
-          <button class="w3-button w3-black w3-round-xxlarge w3-hover-indigo">Comprar</button>
+          <button class="w3-button w3-2018-sailor-blue w3-round-xxlarge w3-hover-indigo">Comprar</button>
         </div>
         <div class="w3-third" style="cursor:pointer">
           <img class = "w3-hover-opacity" src="img/alemania.svg"  id="language-img" alt="Aleman" style="width:100%">
           <h3>ALEMÁN</h3>
           <p>1,72M de estudiantes</p>
-          <button class="w3-button w3-black w3-round-xxlarge w3-hover-indigo w3-center">Comprar</button>
+          <button class="w3-button w3-2018-sailor-blue w3-round-xxlarge w3-hover-indigo w3-center">Comprar</button>
         </div>
       </div>
       <!-- Pagination -->
       <div class="w3-center w3-padding-32">
         <div class="w3-bar">
           <a href="#" class="w3-bar-item w3-button w3-hover-indigo">«</a>
-          <a href="#" class="w3-bar-item w3-black w3-hover-indigo">1</a>
+          <a href="#" class="w3-bar-item w3-2018-sailor-blue w3-hover-indigo">1</a>
           <a href="#" class="w3-bar-item w3-button w3-hover-indigo">2</a>
           <a href="#" class="w3-bar-item w3-button w3-hover-indigo">3</a>
           <a href="#" class="w3-bar-item w3-button w3-hover-indigo">4</a>
@@ -100,7 +119,7 @@
         <img class="w3-mobile" href="#" src="img/LogoWhite.png" alt="logo footer" width="8%">
       </div>
       <div class="w3-hide-large w3-center w3-margin-bottom">
-        <img class="w3-center" href="#" src="img/LogoWhite.png" alt="logo header" width="16%">
+        <img class="w3-center pointer" href="#" src="img/LogoWhite.png" alt="logo header" width="16%">
       </div>
       <div class="w3-bar w3-mobile w3-margin-bottom">
         <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-opacity" >Idiomas</a>
@@ -109,12 +128,12 @@
         <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-opacity" >Descubre</a>
       </div>
       <div class="w3-xxlarge ">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <i class="fa fa-facebook-official w3-hover-opacity pointer"></i>
+        <i class="fa fa-instagram w3-hover-opacity pointer"></i>
+        <i class="fa fa-twitter w3-hover-opacity pointer"></i>
+        <i class="fa fa-linkedin w3-hover-opacity pointer"></i>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
-
 </html>
