@@ -3,43 +3,172 @@
   <head>
     <meta charset="utf-8">
     <title>Lang</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
-    <header>
-      <section class="w3-border-red w3-padding-large w3-row">
+    <header class="w3-container">
+      <!-- NAVIGATION -->
+      <section class="w3-padding-large w3-row w3-border-bottom w3-hide-small w3-hide-medium">
         <div class="w3-twothird">
           <div class="w3-half">
-              <img src="img/LogoBlack.png" alt="logo in header" width="15%">
-           </div>
-           <div class="w3-bar w3-half" >
-             <a href="#" class="w3-bar-item w3-button w3-mobile">Idiomas</a>
-             <a href="#" class="w3-bar-item w3-button w3-mobile">Cursos</a>
-             <a href="#" class="w3-bar-item w3-button w3-mobile">Niveles</a>
-             <a href="#" class="w3-bar-item w3-button w3-mobile">Descubre</a>
+            <a href="index.html"><img class="pointer" href="#" src="img/LogoBlack.png" alt="logo header" width="12%"></a>
+          </div>
+           <div class="w3-bar w3-half w3-mobile w3-hide-small w3-hide-medium">
+             <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-hover-indigo">Idiomas</a>
+             <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-indigo" >Cursos</a>
+             <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-indigo" >Niveles</a>
+             <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-indigo" >Descubre</a>
            </div>
          </div>
-         <div class="w3-bar  w3-third">
-           <a href="#" class="w3-bar-item w3-button w3-right w3-indigo"><i class="fa fa-search"></i></a>
-           <input type="text" class="w3-bar-item w3-input w3-right" placeholder="Buscar..">
-          <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Registrarse</a>
+         <div class="w3-bar w3-third w3-hide-small w3-hide-medium">
+           <a href="#" class="w3-bar-item w3-button w3-right w3-hover-indigo w3-2018-sailor-blue"><i class="fa fa-search"></i></a>
+           <input type="text" class="w3-bar-item w3-input w3-right w3-small" placeholder="Buscar..">
+          <a href="#" class="w3-bar-item w3-button w3-mobile w3-right w3-hover-indigo">Registrarse</a>
          </div>
       </section>
-
-      <!--- <div class="w3-bar w3-light-grey w3-border">
-         <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
-         <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i>s</a>-->
-
+      <section class=" w3-hide-large" id="headerMobile">
+        <div class=" w3-display-topleft w3-padding">
+          <a href="index.html"><img class="pointer" href="#" src="img/LogoBlackMobile.png" alt="logo header" width="70%"></a>
+        </div>
+        <div class=" w3-display-topright">
+          <div class="button-mobile w3-padding">
+              <button class="w3-button w3-xlarge w3-right w3-hover-indigo w3-hide-large " onclick="w3_open()">&#9776;</button>
+          </div>
+          <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="width:200px;" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-hide-large w3-dark-gray" onclick="w3_close()">Cerrar &times;</button>
+            <a href="#" class="w3-bar-item w3-button w3-2018-sailor-blue w3-hover-indigo">Idiomas</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-indigo">Cursos</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-indigo">Niveles</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-indigo">Descubre</a>
+          </div>
+        </div>
+      </section>
     </header>
-    <main>
+    <main class="w3-container">
+      <!-- TITLE -->
+      <div class="w3-center w3-section">
+        <h1 class="w3-xxxlarge" >COMPRA</h1>
+      </div>
 
+      <form class="" action="">
+        <div class="w3-row w3-left w3-padding w3-margin-top">
+          <div class="w3-col w3-margin-right" style="width:50px"><i class="w3-xxxlarge fa fa-home w3-text-indigo"></i></div>
+          <h2 class="w3-rest" >DATOS DE ENTREGA</h2>
+        </div>
+        <div class="w3-row-padding w3-section">
+          <div class="w3-half w3-margin-bottom">
+            <select class="w3-select w3-border" name="option">
+              <option value="" disabled selected>PAÍS</option>
+              <option value="1">Argentina</option>
+              <option value="2">Bolivia</option>
+              <option value="3">Chile</option>
+              <option value="4">Uruguay</option>
+              <option value="5">Paraguay</option>
+            </select>
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="* CÓDIGO POSTAL">
+          </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+          <div class="w3-half w3-margin-bottom">
+            <input class="w3-input w3-border" type="text" placeholder="* CALLE">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="* NÚMERO">
+          </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+          <div class="w3-half w3-margin-bottom">
+            <input class="w3-input w3-border" type="text" placeholder="* DEPARTAMENTO">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="* PISO">
+          </div>
+        </div>
+
+
+        <div class="w3-row w3-left w3-padding w3-margin-top">
+          <div class="w3-col w3-margin-right" style="width:50px"><i class="w3-xxxlarge fa fa-vcard w3-text-indigo"></i></div>
+          <h2 class="w3-rest" >TUS DATOS</h2>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+          <div class="w3-half w3-margin-bottom">
+            <input class="w3-input w3-border" type="text" placeholder="* NOMBRE">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="* APELLIDO">
+          </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+          <div class="w3-half w3-margin-bottom">
+            <input class="w3-input w3-border" type="text" placeholder="* DNI">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="* CORREO">
+          </div>
+        </div>
+
+        <div class="w3-row w3-left w3-padding w3-margin-top">
+          <div class="w3-col w3-margin-right" style="width:50px"><i class="w3-xxxlarge fa fa-truck w3-text-indigo"></i></div>
+          <h2 class="w3-rest" >FORMA DE ENVÍO</h2>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            <input class="w3-radio" type="radio" name="envio" value="male" checked>
+              <label>Envío local</label>
+          </p>
+
+          <p>
+            <input class="w3-radio" type="radio" name="envio" value="female">
+              <label> Envío regional</label>
+          </p>
+
+          <p>
+            <input class="w3-radio" type="radio" name="envio" value="female">
+              <label> Envío Nacional</label>
+          </p>
+
+          <p>
+            <input class="w3-radio" type="radio" name="envio" value="" disabled>
+              <label> Otra opción</label>
+          </p>
+        </div>
+        <div class="w3-padding">
+          <button class="w3-button w3-2018-sailor-blue w3-hover-indigo w3-section w3-padding w3-right">Continuar con el pago</button>
+        </div>
+      </form>
     </main>
-    <footer>
+    <footer class="w3-center w3-indigo w3-container w3-padding-64">
+      <div class="w3-center w3-mobile w3-margin-bottom w3-hide-small w3-hide-medium">
+        <a href="index.html"><img src="img/LogoWhite.png" alt="logo footer" width="8%"></a>
+      </div>
+      <div class="w3-hide-large w3-center w3-margin-bottom">
+        <img class="w3-center pointer" href="#" src="img/LogoWhite.png" alt="logo header" width="16%">
+      </div>
+      <div class="w3-bar w3-mobile w3-margin-bottom">
+        <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-hover-opacity" >Idiomas</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-opacity" >Cursos</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-opacity" >Niveles</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-opacity" >Descubre</a>
+      </div>
+      <div class="w3-xxlarge ">
+        <i class="fa fa-facebook-official w3-hover-opacity pointer"></i>
+        <i class="fa fa-instagram w3-hover-opacity pointer"></i>
+        <i class="fa fa-twitter w3-hover-opacity pointer"></i>
+        <i class="fa fa-linkedin w3-hover-opacity pointer"></i>
+      </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
-
 </html>

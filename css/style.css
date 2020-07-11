@@ -8,6 +8,11 @@ button, .pointer
   cursor: pointer;
 }
 
+.boton-compra
+{
+  text-decoration: none;
+}
+
 #mySidebar
 {
   display: none;
