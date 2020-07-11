@@ -28,7 +28,7 @@
          <div class="w3-bar w3-third w3-hide-small w3-hide-medium">
            <a href="#" class="w3-bar-item w3-button w3-right w3-hover-indigo w3-2018-sailor-blue"><i class="fa fa-search"></i></a>
            <input type="text" class="w3-bar-item w3-input w3-right w3-small" placeholder="Buscar..">
-          <a href="registro.html" class="w3-bar-item w3-button w3-mobile w3-right w3-hover-indigo">Registrarse</a>
+          <a href="registro.html" class="w3-bar-item w3-button w3-mobile w3-right w3-hover-indigo" id="idioma-nav">Registrarse</a>
          </div>
       </section>
       <section class=" w3-hide-large" id="headerMobile">
@@ -52,18 +52,44 @@
     <main class="w3-container">
       <!-- TITLE -->
       <div class="w3-center w3-section">
-        <h1 class="w3-xxxlarge" >COMPRA</h1>
+        <h1 class="w3-xxxlarge" >REGISTRATE</h1>
       </div>
-
-      <form class="w3-section" action="">
+      <div class="w3-center w3-section w3-padding">
+        <h3>Creá tu perfil de miembro de <a id="idioma-nav">Lang</a> y obtené acceso anticipado a los mejores cursos, libros y cultura <a id="idioma-nav">Lang</a>.</h3>
+      </div>
+      <form class="w3-section"  action="">
         <div class="w3-row w3-left w3-padding w3-margin-top">
-          <div class="w3-col w3-margin-right" style="width:50px"><i class="w3-xxxlarge fa fa-home w3-text-indigo"></i></div>
-          <h2 class="w3-rest" >DATOS DE ENTREGA</h2>
+          <div class="w3-col w3-margin-right" style="width:50px"><i class="w3-xxxlarge fa fa-id-card w3-text-indigo"></i></div>
+          <h2 class="w3-rest" >REGISTRO</h2>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+          <div class="w3-margin-bottom">
+            <input class="w3-input w3-border" type="text" placeholder="* NOMBRE">
+          </div>
+          <div class="">
+            <input class="w3-input w3-border" type="text" placeholder="* APELLIDO">
+          </div>
         </div>
         <div class="w3-row-padding w3-section">
-          <div class="w3-half w3-margin-bottom">
+          <div class="w3-margin-bottom">
+            <input class="w3-input w3-border" type="text" placeholder="* CORREO ELECTRÓNICO">
+          </div>
+          <div class="">
+            <input class="w3-input w3-border" type="text" placeholder="* CONTRASEÑA">
+          </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+          <div class="">
+            <input class="w3-input w3-border" type="text" placeholder="* CONFIRMAR CONTRASEÑA">
+          </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+          <div class="">
             <select class="w3-select w3-border" name="option">
-              <option value="" disabled selected>PAÍS</option>
+              <option value="" disabled selected>* PAÍS</option>
               <option value="1">Argentina</option>
               <option value="2">Bolivia</option>
               <option value="3">Chile</option>
@@ -71,81 +97,18 @@
               <option value="5">Paraguay</option>
             </select>
           </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="* CÓDIGO POSTAL">
-          </div>
         </div>
 
         <div class="w3-row-padding w3-section">
-          <div class="w3-half w3-margin-bottom">
-            <input class="w3-input w3-border" type="text" placeholder="* CALLE">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="* NÚMERO">
-          </div>
+          <input class="w3-check " type="checkbox">
+          <label>Quiero recibir correos electrónicos de <a id="idioma-nav">Lang</a> con actualizaciones de productos, ofertas y beneficios como miembro.</label>
+          <br>
+          <input class="w3-check" type="checkbox">
+          <label>* Acepto con los terminos y condiciones de usuario.</label>
         </div>
 
-        <div class="w3-row-padding w3-section">
-          <div class="w3-half w3-margin-bottom">
-            <input class="w3-input w3-border" type="text" placeholder="* DEPARTAMENTO">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="* PISO">
-          </div>
-        </div>
-
-
-        <div class="w3-row w3-left w3-padding w3-margin-top">
-          <div class="w3-col w3-margin-right" style="width:50px"><i class="w3-xxxlarge fa fa-vcard w3-text-indigo"></i></div>
-          <h2 class="w3-rest" >TUS DATOS</h2>
-        </div>
-
-        <div class="w3-row-padding w3-section">
-          <div class="w3-half w3-margin-bottom">
-            <input class="w3-input w3-border" type="text" placeholder="* NOMBRE">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="* APELLIDO">
-          </div>
-        </div>
-
-        <div class="w3-row-padding w3-section">
-          <div class="w3-half w3-margin-bottom">
-            <input class="w3-input w3-border" type="text" placeholder="* DNI">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="* CORREO">
-          </div>
-        </div>
-
-        <div class="w3-row w3-left w3-padding w3-margin-top">
-          <div class="w3-col w3-margin-right" style="width:50px"><i class="w3-xxxlarge fa fa-truck w3-text-indigo"></i></div>
-          <h2 class="w3-rest" >FORMA DE ENVÍO</h2>
-        </div>
-
-        <div class="w3-container">
-          <p>
-            <input class="w3-radio" type="radio" name="envio" value="male" checked>
-              <label>Envío local</label>
-          </p>
-
-          <p>
-            <input class="w3-radio" type="radio" name="envio" value="female">
-              <label> Envío regional</label>
-          </p>
-
-          <p>
-            <input class="w3-radio" type="radio" name="envio" value="female">
-              <label> Envío Nacional</label>
-          </p>
-
-          <p>
-            <input class="w3-radio" type="radio" name="envio" value="" disabled>
-              <label> Otra opción</label>
-          </p>
-        </div>
-        <div class="w3-padding">
-          <button class="w3-button w3-2018-sailor-blue w3-hover-indigo w3-section w3-padding w3-right">Continuar con el pago</button>
+        <div class="w3-row-padding w3-section margin-bottom">
+          <button class="w3-button w3-block w3-2018-sailor-blue w3-hover-indigo">UNITE A NOSOTROS</button>
         </div>
       </form>
     </main>
