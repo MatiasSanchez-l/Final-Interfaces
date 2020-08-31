@@ -1,4 +1,4 @@
-# Curso de idiomas 📜💻
+# Curso de idiomas 🌎💻
 
 Este es un proyecto que debe simular una página web de idiomas
 
